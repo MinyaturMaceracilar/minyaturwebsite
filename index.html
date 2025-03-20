@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #333; }
-    </style>
+    <title>Minyatür Maceracılar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple static page hosted on GitHub Pages.</p>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center bg-white">
+        <h1 class="text-5xl font-bold">Minyatür Maceracılar</h1>
+        <p class="mt-4 text-lg">En iyi Maceracı minyatürler burada!</p>
+        <a href="https://shopier.com/YOUR-STORE" class="mt-6 bg-blue-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-blue-600">
+            Mağazaya Git
+        </a>
+    </section>
+
+    <!-- Miniature Showcase -->
+    <section class="py-16 bg-gray-200">
+        <h2 class="text-3xl font-bold text-center mb-8">Öne Çıkan Minyatürler</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/300" alt="Mini 1" class="rounded-lg">
+                <h3 class="text-lg font-bold mt-4">Minyatür 1</h3>
+                <p class="text-sm">Açıklama burada.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/300" alt="Mini 2" class="rounded-lg">
+                <h3 class="text-lg font-bold mt-4">Minyatür 2</h3>
+                <p class="text-sm">Açıklama burada.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/300" alt="Mini 3" class="rounded-lg">
+                <h3 class="text-lg font-bold mt-4">Minyatür 3</h3>
+                <p class="text-sm">Açıklama burada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 text-center bg-white">
+        <h2 class="text-3xl font-bold">Bize Ulaşın</h2>
+        <p class="mt-4 text-lg">Sosyal medya ve iletişim bilgileri:</p>
+        <div class="mt-6 space-x-4">
+            <a href="https://instagram.com/YOUR-INSTAGRAM" class="text-blue-500 font-semibold">Instagram</a>
+            <a href="https://discord.gg/YOUR-DISCORD" class="text-blue-500 font-semibold">Discord</a>
+            <a href="https://wa.me/YOUR-NUMBER" class="text-blue-500 font-semibold">WhatsApp</a>
+        </div>
+    </section>
+
 </body>
 </html>
