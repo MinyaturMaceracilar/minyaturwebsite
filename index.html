@@ -6,8 +6,20 @@
     <title>Minyatür Maceracılar</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
-    
+<body class="bg-gray-100 text-gray-900 scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <span class="font-bold text-lg">Minyatür Maceracılar</span>
+            <div class="space-x-4 text-sm">
+                <a href="#hakkimizda" class="hover:underline">Hakkımızda</a>
+                <a href="#sss" class="hover:underline">SSS</a>
+                <a href="#iletisim" class="hover:underline">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="h-screen flex flex-col justify-center items-center text-center bg-white">
         <img src="logo.png" alt="Minyatür Maceracılar Logo" class="w-32 h-32 mb-4">
@@ -16,6 +28,21 @@
         <a href="https://www.shopier.com/minyaturmaceracilar" class="mt-6 bg-blue-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-blue-600">
             Mağazaya Git
         </a>
+    </section>
+
+    <!-- Hakkımızda Section -->
+    <section id="hakkimizda" class="py-16 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold mb-4">Hakkımızda</h2>
+        <p class="max-w-3xl mx-auto px-4 text-lg">
+            Minyatür Maceracılar masaüstü oyunlar için 3 boyutlu minyatürler ve aksesuarlar üreten bir küçük işletmedir.
+            Detaylı ve dayanıklı minyatürlerimizle Dungeons&amp;Dragons, Pathfinder ya da istediğiniz oyun deneyiminizi üst seviyeye çıkarabilirsiniz. 
+            Aksesuarlarımızla da zarlarınızı ve minyatürlerinizi güvenle taşıyabilir, sergileyebilir ya da oyun takibini kolaylaştırabilirsiniz.
+        </p>
+        <p class="max-w-3xl mx-auto px-4 text-lg mt-6">
+            Her maceranın kahramanlara, canavarlara ve unutulmaz sahnelere ihtiyacı var! Minyatür Maceracılar olarak masaüstü oyunlarınız için kaliteli 3D baskı figürler ile aksesuarlar üretiyoruz.
+            İster kendi karakterinizin minyatürünü arıyor olun, ister destansı bir boss savaşı için özel sahne setleri veya maceralarınızı renklendirecek aksesuarlar peşinde olun, koleksiyonumuzda kendinize göre ürünler bulabilirsiniz.
+            Oyun deneyiminizi bir üst seviyeye taşımak için bize katılın!
+        </p>
     </section>
 
     <!-- Miniature Showcase -->
@@ -40,13 +67,51 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="sss" class="py-16 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-8">Sıkça Sorulan Sorular (SSS)</h2>
+        <div class="max-w-3xl mx-auto px-4 text-left space-y-6">
+            <div>
+                <h3 class="font-semibold">Minyatür Maceracılar nedir?</h3>
+                <p>Minyatür Maceracılar masaüstü oyunlar için 3 boyutlu minyatürler ve aksesuarlar üreten bir küçük işletmedir.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">Minyatür nedir, nerelerde kullanılır?</h3>
+                <p>Minyatür ya da mini, masaüstü oyunlarda kullanılan figürlere verilen isimdir. Bu figürler savaş oyunlarında (wargaming) veya masaüstü rol yapma oyunlarında (FRP/TTRPG) kullanılır.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">Masaüstü oyun nedir?</h3>
+                <p>Masaüstü oyunlar; rol yapma oyunları, savaş oyunları, kutu oyunları ve benzeri oyunlardır. Bunlardan masaüstü rol yapma oyunları yani FRP’lere Dungeons & Dragons, Pathfinder, Fate sistemlerini; savaş oyunlarına ise Warhammer 40K oyununu örnek verebiliriz.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">Ürünlerinizi nereden satın alabilirim?</h3>
+                <p>Ürünlerimizi shopier üzerinden satın alabilirsiniz. Shopier mağazamıza <a href="https://www.shopier.com/minyaturmaceracilar" class="text-blue-500 underline">www.shopier.com/minyaturmaceracilar</a> adresinden ulaşabilirsiniz.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">Ürünlerinizi nasıl üretiyorsunuz?</h3>
+                <p>Minyatürlerimiz SLA yazıcı ile reçineden üretilmektedir. Aksesuarlarımız da FDM yazıcı ile filamentten üretilmektedir.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">Ürünleriniz dayanıklı mı?</h3>
+                <p>Minyatürlerimiz reçineden üretilmiş olup oldukça dayanıklıdır. Ancak silahlar gibi küçük parçalar taşıma esnasında hasar görebileceğinden dikkatli olmanızı tavsiye ediyoruz.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">İade koşulları nelerdir?</h3>
+                <p>Ürünlerinizin iadesi için shopier üzerinden iade talebi oluşturabilirsiniz. İadenizin kabul edilebilmesi için ürünün kullanılmamış ve zarar görmemiş olması gerekmektedir. Kargo ücretinin iadesi yapılmayacaktır.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">Ürünümün hasarlı gelmesi durumda ne yapabilirim?</h3>
+                <p>Ürününüz hasarlı geldiyse <a href="mailto:minyaturmaceracilar@gmail.com" class="text-blue-500 underline">minyaturmaceracilar@gmail.com</a>, minyaturmaceracilar.com/bizeulasin ya da shopier üzerinden bizimle iletişime geçebilirsiniz.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section class="py-16 text-center bg-white">
+    <section id="iletisim" class="py-16 text-center bg-gray-100">
         <h2 class="text-3xl font-bold">Bize Ulaşın</h2>
         <p class="mt-4 text-lg">Sosyal medya ve iletişim bilgileri:</p>
         <div class="mt-6 space-x-4">
             <a href="https://www.instagram.com/minyaturmaceracilar" class="text-blue-500 font-semibold">Instagram</a>
-            
             <a href="mailto:minyaturmaceracilar@gmail.com" class="text-blue-500 font-semibold">E-posta</a>
         </div>
     </section>
