@@ -27,6 +27,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minyatür Maceracılar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+// Smooth scroll effect
+const links = document.querySelectorAll('.scroll-link');
+links.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 60,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 </head>
     <!-- SEO Meta -->
     <meta name="description" content="Türkiye'de masaüstü oyunları için 3D minyatürler ve aksesuarlar üreten butik bir dükkan. D&D, Pathfinder ve daha fazlası için özel tasarımlar.">
@@ -42,9 +58,9 @@
     <nav class="bg-white shadow sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
                         <div class="space-x-4 text-sm">
-                <a href="#hakkimizda" class="hover:underline">Hakkımızda</a>
-                <a href="#sss" class="hover:underline">SSS</a>
-                <a href="#iletisim" class="hover:underline">İletişim</a>
+                <a href="#hakkimizda" class="hover:underline cursor-pointer scroll-link">Hakkımızda</a>
+                <a href="#sss" class="hover:underline cursor-pointer scroll-link">SSS</a>
+                <a href="#iletisim" class="hover:underline cursor-pointer scroll-link">İletişim</a>
             </div>
         </div>
     </nav>
@@ -54,20 +70,15 @@
         <img src="logo.png" alt="Minyatür Maceracılar Logo" class="w-32 h-32 mb-4 mx-auto block">
         <h1 class="text-5xl font-bold leading-tight">Minyatür Maceracılar</h1>
         <p class="mt-4 text-lg max-w-xl">Büyük maceracılar için küçük dükkan</p>
-        <a href="https://www.shopier.com/minyaturmaceracilar" class="mt-6 bg-[var(--brand-purple)] text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-purple-700 transition-transform duration-300 transform hover:scale-105">
+        <a href="https://www.shopier.com/minyaturmaceracilar" class="-ml-4 mt-6 bg-[var(--brand-purple)] text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-purple-700 transition-transform duration-300 transform hover:scale-105">
             Mağazaya Git
         </a>
     </section>
 
     <!-- Hakkımızda Section -->
-    <section id="hakkimizda" class="pt-20 pb-16 bg-gray-100 text-center" class="py-16 bg-gray-100 text-center">
+    <section id="hakkimizda" class="pt-20 pb-16 bg-gray-100 text-center">
         <h2 class="text-3xl font-bold mb-4">Hakkımızda</h2>
         <p class="max-w-3xl mx-auto px-4 text-lg">
-            Minyatür Maceracılar masaüstü oyunlar için 3 boyutlu minyatürler ve aksesuarlar üreten bir küçük işletmedir.
-            Detaylı ve dayanıklı minyatürlerimizle Dungeons&amp;Dragons, Pathfinder ya da istediğiniz oyun deneyiminizi üst seviyeye çıkarabilirsiniz. 
-            Aksesuarlarımızla da zarlarınızı ve minyatürlerinizi güvenle taşıyabilir, sergileyebilir ya da oyun takibini kolaylaştırabilirsiniz.
-        </p>
-        <p class="max-w-3xl mx-auto px-4 text-lg mt-6">
             Her maceranın kahramanlara, canavarlara ve unutulmaz sahnelere ihtiyacı var! Minyatür Maceracılar olarak masaüstü oyunlarınız için kaliteli 3D baskı figürler ile aksesuarlar üretiyoruz.
             İster kendi karakterinizin minyatürünü arıyor olun, ister destansı bir boss savaşı için özel sahne setleri veya maceralarınızı renklendirecek aksesuarlar peşinde olun, koleksiyonumuzda kendinize göre ürünler bulabilirsiniz.
             Oyun deneyiminizi bir üst seviyeye taşımak için bize katılın!
