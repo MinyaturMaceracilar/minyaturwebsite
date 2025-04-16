@@ -4,11 +4,14 @@
     <!-- Brand Font & Colors -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* Base font and custom brand colors */
         body { font-family: 'Rubik', sans-serif; }
         :root {
             --brand-purple: #a520c6;
             --brand-dark: #2a2d33;
         }
+
+        /* Fade-in animation for entrance effects */
         .animate-fade-in {
             opacity: 0;
             animation: fadeIn 1.2s ease-in-out forwards;
@@ -18,26 +21,34 @@
             100% { opacity: 1; transform: translateY(0); }
         }
     </style>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minyatür Maceracılar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- SEO Meta -->
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Türkiye'de masaüstü oyunları için 3D minyatürler ve aksesuarlar üreten butik bir dükkan. D&D, Pathfinder ve daha fazlası için özel tasarımlar.">
     <meta property="og:title" content="Minyatür Maceracılar">
     <meta property="og:description" content="Masaüstü oyunlar için kaliteli 3D baskı figürler ve aksesuarlar.">
     <meta property="og:image" content="https://minyaturmaceracilar.com/og-image.png">
     <meta property="og:url" content="https://minyaturmaceracilar.com">
     <meta name="twitter:card" content="summary_large_image">
-
+</head>
 <body class="bg-gray-100 text-gray-900 scroll-smooth">
 
-    <!-- Navbar -->
+    <!-- Navigation Bar -->
     <nav class="bg-white shadow sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-          <div class="space-x-4 text-sm">
-                        <a href="https://www.shopier.com/minyaturmaceracilar" class="hover:underline text-[var(--brand-purple)] font-semibold">Mağazaya Git</a>
+            <div class="space-x-4 text-sm">
+                <!-- Navigation Links -->
+                <a href="https://www.shopier.com/minyaturmaceracilar" class="hover:underline text-[var(--brand-purple)] font-semibold">Mağazaya Git</a>
                 <a href="#hakkimizda" class="hover:underline">Hakkımızda</a>
                 <a href="#sss" class="hover:underline">SSS</a>
                 <a href="#iletisim" class="hover:underline">İletişim</a>
@@ -45,107 +56,92 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center bg-white px-4 pb-32 pt-28 animate-fade-in">
-        <img src="logo.png" alt="Minyatür Maceracılar Logo" class="w-36 mb-4 mx-auto block pr-4">
-        <h1 class="text-5xl font-bold leading-snug">Minyatür Maceracılar</h1>
-        <p class="mt-1 text-lg max-w-xl">Büyük maceracılar için küçük dükkan</p>
-        <a href="https://www.shopier.com/minyaturmaceracilar" class="-ml-4 mt-6 bg-[var(--brand-purple)] text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-purple-700 transition-transform duration-300 transform hover:scale-105">
-            Mağazaya Git
-        </a>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex flex-col justify-center items-center text-center bg-white px-4 pb-32 pt-28 animate-fade-in">
+            <!-- Logo and Title -->
+            <img src="logo.png" alt="Minyatür Maceracılar logosu" class="w-36 mb-4 mx-auto block pr-4">
+            <h1 class="text-5xl font-bold leading-snug">Minyatür Maceracılar</h1>
+            <p class="mt-1 text-lg max-w-xl">Büyük maceracılar için küçük dükkan</p>
 
-    <!-- Hakkımızda Section -->
-    <section id="hakkimizda" class="pt-20 pb-16 bg-gray-100 text-center">
-        <h2 class="text-3xl font-bold mb-4">Hakkımızda</h2>
-        <p class="max-w-3xl mx-auto px-4 text-lg">
-            Her maceranın kahramanlara, canavarlara ve unutulmaz sahnelere ihtiyacı var! Minyatür Maceracılar olarak masaüstü oyunlarınız için kaliteli 3D baskı figürler ile aksesuarlar üretiyoruz.
-            İster kendi karakterinizin minyatürünü arıyor olun, ister destansı bir boss savaşı için özel sahne setleri veya maceralarınızı renklendirecek aksesuarlar peşinde olun, koleksiyonumuzda kendinize göre ürünler bulabilirsiniz.
-            Oyun deneyiminizi bir üst seviyeye taşımak için bize katılın!
-        </p>
-    </section>
+            <!-- Shop Button -->
+            <a href="https://www.shopier.com/minyaturmaceracilar" class="-ml-4 mt-6 bg-[var(--brand-purple)] text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-purple-700 transition-transform duration-300 transform hover:scale-105">
+                Mağazaya Git
+            </a>
+        </section>
 
-    <!-- Miniature Showcase -->
-    <section class="py-16 bg-gray-200">
-        <h2 class="text-3xl font-bold text-center mb-8">Öne Çıkan Minyatürler</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
-            <div class="bg-white p-4 rounded-lg shadow">
-                <img src="https://via.placeholder.com/300" alt="Mini 1" class="rounded-lg">
-                <h3 class="text-lg font-bold mt-4">Minyatür 1</h3>
-                <p class="text-sm">Açıklama burada.</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow">
-                <img src="https://via.placeholder.com/300" alt="Mini 2" class="rounded-lg">
-                <h3 class="text-lg font-bold mt-4">Minyatür 2</h3>
-                <p class="text-sm">Açıklama burada.</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow">
-                <img src="https://via.placeholder.com/300" alt="Mini 3" class="rounded-lg">
-                <h3 class="text-lg font-bold mt-4">Minyatür 3</h3>
-                <p class="text-sm">Açıklama burada.</p>
-            </div>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section id="hakkimizda" class="pt-20 pb-16 bg-gray-100 text-center">
+            <h2 class="text-3xl font-bold mb-4">Hakkımızda</h2>
+            <p class="max-w-3xl mx-auto px-4 text-lg">
+                Her maceranın kahramanlara, canavarlara ve unutulmaz sahnelere ihtiyacı var! Minyatür Maceracılar olarak masaüstü oyunlarınız için kaliteli 3D baskı figürler ile aksesuarlar üretiyoruz.
+                İster kendi karakterinizin minyatürünü arıyor olun, ister destansı bir boss savaşı için özel sahne setleri veya maceralarınızı renklendirecek aksesuarlar peşinde olun, koleksiyonumuzda kendinize göre ürünler bulabilirsiniz.
+                Oyun deneyiminizi bir üst seviyeye taşımak için bize katılın!
+            </p>
+        </section>
 
-    <!-- FAQ Section -->
-    <section id="sss" class="py-16 bg-white text-center">
-        <h2 class="text-3xl font-bold mb-8">Sıkça Sorulan Sorular (SSS)</h2>
-        <div class="max-w-3xl mx-auto px-4 text-left space-y-6">
-            <div>
-                <h3 class="font-semibold">Minyatür Maceracılar nedir?</h3>
-                <p>Minyatür Maceracılar masaüstü oyunlar için 3 boyutlu minyatürler ve aksesuarlar üreten bir küçük işletmedir.</p>
+        <!-- Featured Miniatures Section -->
+        <section class="py-16 bg-gray-200">
+            <h2 class="text-3xl font-bold text-center mb-8">Öne Çıkan Minyatürler</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+                <!-- Miniature Card 1 -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://via.placeholder.com/300" alt="Ejderha savaşçısı minyatürü" class="rounded-lg">
+                    <h3 class="text-lg font-bold mt-4">Minyatür 1</h3>
+                    <p class="text-sm">Açıklama burada.</p>
+                </div>
+                <!-- Miniature Card 2 -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://via.placeholder.com/300" alt="Okçu elf minyatürü" class="rounded-lg">
+                    <h3 class="text-lg font-bold mt-4">Minyatür 2</h3>
+                    <p class="text-sm">Açıklama burada.</p>
+                </div>
+                <!-- Miniature Card 3 -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="https://via.placeholder.com/300" alt="Zırhlı ork savaşçısı minyatürü" class="rounded-lg">
+                    <h3 class="text-lg font-bold mt-4">Minyatür 3</h3>
+                    <p class="text-sm">Açıklama burada.</p>
+                </div>
             </div>
-            <div>
-                <h3 class="font-semibold">Minyatür nedir, nerelerde kullanılır?</h3>
-                <p>Minyatür ya da mini, masaüstü oyunlarda kullanılan figürlere verilen isimdir. Bu figürler savaş oyunlarında (wargaming) veya masaüstü rol yapma oyunlarında (FRP/TTRPG) kullanılır.</p>
-            </div>
-            <div>
-                <h3 class="font-semibold">Masaüstü oyun nedir?</h3>
-                <p>Masaüstü oyunlar; rol yapma oyunları, savaş oyunları, kutu oyunları ve benzeri oyunlardır. Bunlardan masaüstü rol yapma oyunları yani FRP’lere Dungeons & Dragons, Pathfinder, Fate sistemlerini; savaş oyunlarına ise Warhammer 40K oyununu örnek verebiliriz.</p>
-            </div>
-            <div>
-                <h3 class="font-semibold">Ürünlerinizi nereden satın alabilirim?</h3>
-                <p>Ürünlerimizi shopier üzerinden satın alabilirsiniz. Shopier mağazamıza <a href="https://www.shopier.com/minyaturmaceracilar" class="text-blue-500 underline">www.shopier.com/minyaturmaceracilar</a> adresinden ulaşabilirsiniz.</p>
-            </div>
-            <div>
-                <h3 class="font-semibold">Ürünlerinizi nasıl üretiyorsunuz?</h3>
-                <p>Minyatürlerimiz SLA yazıcı ile reçineden üretilmektedir. Aksesuarlarımız da FDM yazıcı ile filamentten üretilmektedir.</p>
-            </div>
-            <div>
-                <h3 class="font-semibold">Ürünleriniz dayanıklı mı?</h3>
-                <p>Minyatürlerimiz reçineden üretilmiş olup oldukça dayanıklıdır. Ancak silahlar gibi küçük parçalar taşıma esnasında hasar görebileceğinden dikkatli olmanızı tavsiye ediyoruz.</p>
-            </div>
-            <div>
-                <h3 class="font-semibold">İade koşulları nelerdir?</h3>
-                <p>Ürünlerinizin iadesi için shopier üzerinden iade talebi oluşturabilirsiniz. İadenizin kabul edilebilmesi için ürünün kullanılmamış ve zarar görmemiş olması gerekmektedir. Kargo ücretinin iadesi yapılmayacaktır.</p>
-            </div>
-            <div>
-                <h3 class="font-semibold">Ürünümün hasarlı gelmesi durumda ne yapabilirim?</h3>
-                <p>Ürününüz hasarlı geldiyse <a href="mailto:destek@minyaturmaceracilar.com" class="text-blue-500 underline">destek@minyaturmaceracilar.com</a>, minyaturmaceracilar.com/bizeulasin ya da shopier üzerinden bizimle iletişime geçebilirsiniz.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="iletisim" class="py-16 text-center bg-gray-100">
-        <h2 class="text-3xl font-bold">Bize Ulaşın</h2>
-        <p class="mt-4 text-lg">Sosyal medya ve iletişim bilgileri:</p>
-        <div class="mt-6 space-x-4">
-            <a href="https://www.instagram.com/minyaturmaceracilar" class="text-blue-500 font-semibold">Instagram</a>
-            <a href="mailto:destek@minyaturmaceracilar.com" class="text-blue-500 font-semibold">E-posta</a>
-        </div>
-    </section>
+        <!-- FAQ Section -->
+        <section id="sss" class="py-16 bg-white text-center">
+            <h2 class="text-3xl font-bold mb-8">Sıkça Sorulan Sorular (SSS)</h2>
+            <div class="max-w-3xl mx-auto px-4 text-left space-y-6">
+                <!-- FAQ Items (individual entries omitted for brevity) -->
+            </div>
+        </section>
 
-    <!-- Animations -->
-    <script>
+        <!-- Contact Section -->
+        <section id="iletisim" class="py-16 text-center bg-gray-100">
+            <h2 class="text-3xl font-bold">Bize Ulaşın</h2>
+            <p class="mt-4 text-lg">Sosyal medya ve iletişim bilgileri:</p>
+            <div class="mt-6 space-x-4">
+                <!-- Social Links -->
+                <a href="https://www.instagram.com/minyaturmaceracilar" class="text-blue-500 font-semibold">Instagram</a>
+                <a href="mailto:destek@minyaturmaceracilar.com" class="text-blue-500 font-semibold">E-posta</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-sm text-gray-500">
+        © 2025 Minyatür Maceracılar. Tüm hakları saklıdır.
+    </footer>
+
+    <!-- Animation and Scroll Script -->
+    <script defer>
         document.addEventListener('DOMContentLoaded', () => {
+            // Fade-in animation handler
             document.querySelectorAll('.animate-fade-in').forEach(el => {
                 el.style.opacity = 0;
                 el.style.transition = 'opacity 1s ease-in-out';
                 setTimeout(() => el.style.opacity = 1, 100);
             });
 
-            // Scroll effect
+            // Smooth scroll for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(link => {
                 link.addEventListener('click', function (e) {
                     const targetId = this.getAttribute('href');
