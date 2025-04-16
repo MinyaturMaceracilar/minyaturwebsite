@@ -9,7 +9,7 @@
             --brand-purple: #a520c6;
             --brand-dark: #2a2d33;
         }
-            .animate-fade-in {
+        .animate-fade-in {
             opacity: 0;
             animation: fadeIn 1.2s ease-in-out forwards;
         }
@@ -18,47 +18,11 @@
             100% { opacity: 1; transform: translateY(0); }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Rubik', sans-serif; }
-    </style>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minyatür Maceracılar</title>
-    <script src="https://cdn.tailwindcss.com">
-    // Smooth scroll effect
-    document.querySelectorAll('.scroll-link').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 60,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-</script>
-
-// Smooth scroll effect
-const links = document.querySelectorAll('.scroll-link');
-links.forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 60,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- SEO Meta -->
     <meta name="description" content="Türkiye'de masaüstü oyunları için 3D minyatürler ve aksesuarlar üreten butik bir dükkan. D&D, Pathfinder ve daha fazlası için özel tasarımlar.">
     <meta property="og:title" content="Minyatür Maceracılar">
@@ -73,9 +37,9 @@ links.forEach(link => {
     <nav class="bg-white shadow sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
                         <div class="space-x-4 text-sm">
-                <a href="#hakkimizda" class="hover:underline cursor-pointer scroll-link">Hakkımızda</a>
-                <a href="#sss" class="hover:underline cursor-pointer scroll-link">SSS</a>
-                <a href="#iletisim" class="hover:underline cursor-pointer scroll-link">İletişim</a>
+                <a href="#hakkimizda" class="hover:underline">Hakkımızda</a>
+                <a href="#sss" class="hover:underline">SSS</a>
+                <a href="#iletisim" class="hover:underline">İletişim</a>
             </div>
         </div>
     </nav>
@@ -83,8 +47,8 @@ links.forEach(link => {
     <!-- Hero Section -->
     <section class="min-h-screen flex flex-col justify-center items-center text-center bg-white px-4 pb-32 pt-28 animate-fade-in">
         <img src="logo.png" alt="Minyatür Maceracılar Logo" class="w-32 h-32 mb-4 mx-auto block">
-        <h1 class="text-5xl font-bold leading-tight">Minyatür Maceracılar</h1>
-        <p class="mt-2 text-lg max-w-xl">Büyük maceracılar için küçük dükkan</p>
+        <h1 class="text-5xl font-bold leading-snug">Minyatür Maceracılar</h1>
+        <p class="mt-1 text-lg max-w-xl">Büyük maceracılar için küçük dükkan</p>
         <a href="https://www.shopier.com/minyaturmaceracilar" class="-ml-4 mt-6 bg-[var(--brand-purple)] text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-purple-700 transition-transform duration-300 transform hover:scale-105">
             Mağazaya Git
         </a>
@@ -171,6 +135,31 @@ links.forEach(link => {
         </div>
     </section>
 
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.animate-fade-in').forEach(el => {
+                el.style.opacity = 0;
+                el.style.transition = 'opacity 1s ease-in-out';
+                setTimeout(() => el.style.opacity = 1, 100);
+            });
+
+            // Scroll effect
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 60,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 <!-- Animations -->
